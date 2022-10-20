@@ -12,6 +12,7 @@ int main()
     int n;
     cin >> n;
     int sum = 0;
+    int originaln=n;
 
     while (n)
     {
@@ -20,10 +21,10 @@ int main()
         n = n / 10;
     }
 
-    if (sum == n)
-        cout << sum << endl;
+    if (sum == originaln)
+        cout << "armstrong" << endl;
     else
-        cout<< " is not armstrong"<<endl;
+        cout<< "not armstrong"<<endl;
 
     return 0;
 }
