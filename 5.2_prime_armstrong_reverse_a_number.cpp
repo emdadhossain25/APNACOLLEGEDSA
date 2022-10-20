@@ -8,7 +8,8 @@ int main(){
     int n;
     cin>>n;
     bool flag=0;
-    for (int i = 2; i < n; i++)
+    // as sqrt(n) will produce numbers range lesser and all the numbers will be checked which is prime upto n number can be divisible
+    for (int i = 2; i <=sqrt(n); i++)
     {
         if (n%i==0)
         {
